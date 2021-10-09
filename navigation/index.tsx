@@ -122,6 +122,10 @@ function MainTabNavigator() {
         tabBarIndicatorStyle: {
           backgroundColor: Colors[colorScheme].background,
           height: 3,
+          width: 100,
+        },
+        tabBarLabelStyle: {
+          fontWeight: "bold",
         },
       }}
     >
