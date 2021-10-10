@@ -30,6 +30,7 @@ import {
 } from "../types";
 import LinkingConfiguration from "./LinkingConfiguration";
 import ChatsScreen from "../screens/ChatsScreen";
+import ChatRoomScreen from "../screens/ChatRoomScreen";
 
 export default function Navigation({
   colorScheme,
@@ -93,6 +94,11 @@ function RootNavigator() {
         }}
       />
       <Stack.Screen
+        name="Chatoom"
+        component={ChatRoomScreen}
+        options={{ title: "Chat Room" }}
+      />
+      <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}
         options={{ title: "Oops!" }}
@@ -137,7 +143,9 @@ function MainTabNavigator() {
         component={ChatsScreen}
         options={({ navigation }: RootTabScreenProps<"Camera">) => ({
           title: "Camera",
-          tabBarIcon: ({ color }) => <Fontisto name="camera" color={color} size={15} />,
+          tabBarIcon: ({ color }) => (
+            <Fontisto name="camera" color={color} size={15} />
+          ),
           tabBarLabel: () => null,
           headerRight: () => (
             <Pressable

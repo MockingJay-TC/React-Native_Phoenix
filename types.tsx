@@ -30,6 +30,7 @@ export type RootTabParamList = {
   Chats: undefined;
   Status: undefined;
   Calls: undefined;
+  ChatRoom: undefined;
 };
 
 export type User = {
