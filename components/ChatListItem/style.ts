@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     width: "100%",
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
     padding: 10,
   },
   leftContainer: {
@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
   },
   midContainer: {
     justifyContent: 'space-around',
+    // width: '100%'
   },
   username: {
     fontSize: 16,
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     color: "gray",
   },
   time: {
-    fontSize: 16,
+    fontSize: 14,
     color: "gray",
   },
   avatar: {
